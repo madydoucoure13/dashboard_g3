@@ -1,0 +1,363 @@
+.app-search {
+    position: static;
+    overflow-y: hidden;
+}.app-search form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.app-search form .form-control {
+    border: none;
+    height: calc(1.5em + 0.9rem + 2px);
+    padding-left: 40px;
+    padding-right: 20px;
+    background-color: #eef2f7;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.app-search form span.search-icon {
+    position: absolute;
+    z-index: 4;
+    font-size: 20px;
+    line-height: 38px;
+    left: 10px;
+    top: 0;
+    z-index: 5;
+    color: #6c757d;
+}
+.simplebar-height-auto-observer-wrapper {
+    -webkit-box-sizing: inherit!important;
+    box-sizing: inherit!important;
+    height: 100%;
+    width: 100%;
+    max-width: 1px;
+    position: relative;
+    float: left;
+    max-height: 1px;
+    overflow: hidden;
+    z-index: -1;
+    padding: 0;
+    margin: 0;
+    pointer-events: none;
+    -webkit-box-flex: inherit;
+    -ms-flex-positive: inherit;
+    flex-grow: inherit;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+}
+[data-simplebar] {
+    position: relative;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+.simplebar-offset {
+    direction: inherit!important;
+    -webkit-box-sizing: inherit!important;
+    box-sizing: inherit!important;
+    resize: none!important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: touch;
+}
+.simplebar-content-wrapper {
+    direction: inherit;
+    -webkit-box-sizing: border-box!important;
+    box-sizing: border-box!important;
+    position: relative;
+    display: block;
+    height: 100%;
+    width: auto;
+    overflow: auto;
+    max-width: 100%;
+    max-height: 100%;
+    scrollbar-width: none;
+}
+.simplebar-wrapper {
+    overflow: hidden;
+    width: inherit;
+    height: inherit;
+    max-width: inherit;
+    max-height: inherit;
+}
+.simplebar-mask {
+    direction: inherit;
+    position: absolute;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: auto!important;
+    height: auto!important;
+    z-index: 0;
+}
+.conversation-list {
+    list-style: none;
+    list-style-position: initial;
+    list-style-image: initial;
+    list-style-type: none;
+    padding: 0 15px;
+}
+.conversation-list .chat-avatar {
+    float: left;
+    text-align: center;
+    width: 42px;
+}.conversation-list li {
+    margin-bottom: 20px;
+}.conversation-list .chat-avatar img {
+    border-radius: 100%;
+    width: 100%;
+}.conversation-list .conversation-text {
+    float: left;
+    font-size: 13px;
+    margin-left: 12px;
+    width: 70%;
+}.conversation-list .ctext-wrap {
+    background: #eef2f7;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}.conversation-list .ctext-wrap:after {
+    left: -11px;
+    top: 0;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+    border-top-color: #eef2f7;
+    border-width: 6px;
+    margin-right: -1px;
+    border-right-color: #eef2f7;
+}.conversation-list .ctext-wrap i {
+    display: block;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    position: relative;
+}.conversation-list .ctext-wrap p {
+    margin: 0;
+    padding-top: 3px;
+}.conversation-list .odd .chat-avatar {
+    float: right!important;
+}.conversation-list .odd .conversation-text {
+    float: right!important;
+    margin-right: 12px;
+    text-align: right;
+    width: 70%!important;
+}.conversation-list .odd .ctext-wrap {
+    background-color: var(--ct-light);
+}.conversation-list li .conversation-actions {
+    float: right;
+    display: none;
+}.conversation-list .odd .conversation-actions {
+    float: left;
+}
+.font-14 {
+    font-size: 14px!important;
+}
+.text-muted {
+    opacity: 1;
+    color: #8a969c!important;
+}
+.simplebar-content-wrapper::-webkit-scrollbar,.simplebar-hide-scrollbar::-webkit-scrollbar {
+    display: none
+}
+.custom-scroll {
+    height: 100%
+}
+.simplebar-content:after,.simplebar-content:before {
+    content: " ";
+    display: table
+}
+
+.simplebar-placeholder {
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    pointer-events: none
+}
+[data-simplebar-lg] .simplebar-scrollbar {
+    right: 1px;
+    width: 10px
+}
+
+[data-simplebar-primary] .simplebar-scrollbar:before {
+    background: red
+}
+
+
+.simplebar-height-auto-observer {
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit;
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 1000%;
+    width: 1000%;
+    min-height: 1px;
+    min-width: 1px;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: -1
+}
+
+.simplebar-track {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden
+}
+
+[data-simplebar].simplebar-dragging .simplebar-content {
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+[data-simplebar].simplebar-dragging .simplebar-track {
+    pointer-events: all
+}
+
+.simplebar-scrollbar {
+    position: absolute;
+    right: 2px;
+    width: 5px;
+    min-height: 10px
+}
+
+.simplebar-scrollbar:before {
+    position: absolute;
+    content: "";
+    background: #a2adb7;
+    border-radius: 7px;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: opacity .2s linear;
+    transition: opacity .2s linear
+}
+
+.simplebar-scrollbar.simplebar-visible:before {
+    opacity: .5;
+    -webkit-transition: opacity 0s linear;
+    transition: opacity 0s linear
+}
+
+.simplebar-track.simplebar-vertical {
+    top: 0;
+    width: 11px
+}
+
+.simplebar-track.simplebar-vertical .simplebar-scrollbar:before {
+    top: 2px;
+    bottom: 2px
+}
+
+.simplebar-track.simplebar-horizontal {
+    left: 0;
+    height: 11px
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar {
+    right: auto;
+    left: 0;
+    top: 2px;
+    height: 7px;
+    min-height: 0;
+    min-width: 10px;
+    width: auto
+}
+
+.simplebar-track.simplebar-horizontal .simplebar-scrollbar:before {
+    height: 100%;
+    left: 2px;
+    right: 2px
+}
+
+[data-simplebar-direction=rtl] .simplebar-track.simplebar-vertical {
+    right: auto;
+    left: 0
+}
+
+.hs-dummy-scrollbar-size {
+    direction: rtl;
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    height: 500px;
+    width: 500px;
+    overflow-y: hidden;
+    overflow-x: scroll
+}
+
+.simplebar-hide-scrollbar {
+    position: fixed;
+    left: 0;
+    visibility: hidden;
+    overflow-y: scroll;
+    scrollbar-width: none
+}
+
+.custom-scroll {
+    height: 100%
+}
+
+[data-simplebar-lg] .simplebar-scrollbar {
+    right: 1px;
+    width: 10px
+}
+
+[data-simplebar-primary] .simplebar-scrollbar:before {
+    background:red
+}
+.conversation-list .odd .ctext-wrap {
+    background-color: #eef2f7;
+}
+.conversation-list .ctext-wrap {
+    background: #eef2f7;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 12px;
+    position: relative;
+}
+.conversation-list .odd .ctext-wrap:after {
+    border-color: transparent;
+    border-left-color: #eef2f7;
+    border-top-color: #eef2f7;
+    right: -10px;
+    left: auto;
+}

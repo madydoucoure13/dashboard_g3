@@ -1,0 +1,199 @@
+<!--section class="chart">
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col-md-2">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <apx-chart
+                            [series]="chartOptions.series"
+                            [chart]="chartOptions.chart"
+                            ></apx-chart>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-sm-4">
+            <div class="card" >
+                <div class="card-body">
+                    <div class="col-md-2">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example.</p>
+                    </div>
+                    <div class="col-md-2">
+                        <apx-chart
+                            [series]="chartOptions.series"
+                            [chart]="chartOptions.chart"
+                            ></apx-chart>
+                    </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col">
+            <div class="card">
+                <div class="card-body">
+                    <div class="col">
+                        <h5 class="card-title">Card title</h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example.</p>
+                    </div>
+                    <div class="col">
+                        <apx-chart
+                            [series]="chartOptions.series"
+                            [chart]="chartOptions.chart"
+                            ></apx-chart>
+                    </div>
+                </div>
+              </div>
+        </div>
+    </div>
+    </section-->
+
+    <section class="section-stat">
+        <div class="row">
+            <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-center">
+                    <div class="member-info">
+                        <h4>Ventes</h4>
+                        <span>475 000fcfa</span>
+                        <span>400 pièces</span>
+                    </div>
+                    <div class="teampic">
+                        <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [labels]="chartOptions.labels"
+                        ></apx-chart>
+                     </div>
+                    
+                </div>
+            </div>
+            <!--CARD-2-->
+            <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-center">
+                    <div class="member-info">
+                        <h4>Ventes</h4>
+                        <span>475 000fcfa</span>
+                        <span>400 pièces</span>
+                    </div>
+                    <div class="teampic">
+                        <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [labels]="chartOptions.labels"
+                        ></apx-chart>
+                     </div>
+                    
+                </div>
+            </div>
+            <!--CARD-3-->
+            <div class="col-lg-4 mt-4">
+                <div class="member d-flex align-items-center">
+                    <div class="member-info">
+                        <h4>Ventes</h4>
+                        <span>475 000fcfa</span>
+                        <span>400 pièces</span>
+                    </div>
+                    <div class="teampic">
+                        <apx-chart
+                        [series]="chartOptions.series"
+                        [chart]="chartOptions.chart"
+                        [labels]="chartOptions.labels"
+                        
+                        ></apx-chart>
+                     </div>
+                    
+                </div>
+            </div>
+          </div>
+    </section>
+
+    <section>
+        <div class="main">
+            <div class="row sparkboxes mt-4 mb-4">
+              <div class="col-md-4">
+                <div class="box box1">
+                  <div id="spark1">
+                    <apx-chart
+                    [series]="spark1.series"
+                    [chart]="spark1.chart"
+                    [xaxis]="spark1.xaxis"
+                    [yaxis]="spark1.yaxis"
+                    [dataLabels]="spark1.dataLabels"
+                    [grid]="spark1.grid"
+                    [stroke]="spark1.stroke"
+                    [title]="spark1.title"
+                    [subtitle]="spark1.subtitle"
+                    [fill]="spark1.fill"
+                ></apx-chart>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box box2">
+                  <div id="spark2"> <apx-chart
+                    [series]="spark2.series"
+                    [chart]="spark2.chart"
+                    [xaxis]="spark2.xaxis"
+                    [yaxis]="spark2.yaxis"
+                    [dataLabels]="spark2.dataLabels"
+                    [grid]="spark2.grid"
+                    [stroke]="spark2.stroke"
+                    [title]="spark2.title"
+                    [subtitle]="spark2.subtitle"
+                    [fill]="spark2.fill"
+                ></apx-chart></div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="box box3">
+                  <div id="spark3"> <apx-chart
+                    [series]="sparkTest.series"
+                    [chart]="sparkTest.chart"
+                    [xaxis]="sparkTest.xaxis"
+                    [yaxis]="sparkTest.yaxis"
+                    [dataLabels]="sparkTest.dataLabels"
+                    [stroke]="sparkTest.stroke"
+                    [title]="sparkTest.title"
+                    [subtitle]="sparkTest.subtitle"
+                    [fill]="sparkTest.fill"
+                ></apx-chart></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-5 mb-4">
+              <div class="col-md-6">
+                <div class="box">
+                  <div id="bar"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box">
+                  <div id="donut"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mt-4 mb-4">
+              <div class="col-md-6">
+                <div class="box">
+                  <div id="area"></div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="box">
+                  <div id="line"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </section>
+    

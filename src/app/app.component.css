@@ -1,0 +1,11 @@
+@media (max-width: 767.98px){
+    .show .mb-auto {
+    margin-bottom: 0!important;
+}
+}
+.nav-pills .nav-link{
+    border-radius: 0px;
+}
+.side-bar{
+    padding-top:0;
+}

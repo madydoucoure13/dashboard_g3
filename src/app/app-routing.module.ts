@@ -15,6 +15,7 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { AdDetailComponent } from './ad-detail/ad-detail.component';
 
 const routes: Routes = [
+  {path: '', component: SectionChartComponent},
   {path: 'accueil', component: SectionChartComponent},
   {path:'products',component:ProductsComponent },
   {path:'commands',component:CommandsComponent },

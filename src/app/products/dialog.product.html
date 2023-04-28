@@ -1,0 +1,183 @@
+<h2 mat-dialog-title>Ajout de produit {{data.id}}</h2>
+<mat-dialog-content class="mat-typography">
+  <nav class="py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+
+          <!-- Breadcrumb -->
+          <ol class="breadcrumb mb-0 fs-xs text-gray-400">
+            <li class="breadcrumb-item">
+              <a class="text-gray-400" href="index.html">Home</a>
+            </li>
+            <li class="breadcrumb-item">
+              <a class="text-gray-400" href="shop.html">Women's Shoes</a>
+            </li>
+            <li class="breadcrumb-item active">
+              <input type="text" value=" Leather Sneakers">
+             
+            </li>
+          </ol>
+
+        </div>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+    <div class="row">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="mb-4 flickity-enabled is-fade">
+            <a href="">
+                <img src="..//../../../assets/article/product-1.jpg" alt="">
+            </a>
+            </div> 
+        </div>
+        <div class="bottom">
+            <div class="col-md-4 px-2 b-img-container">
+                <a href="">
+                    <img src="..//../../../assets/article/product-1.jpg" alt="">
+                </a>
+                </div> <div class="col-md-4 px-2 b-img-container">
+                    <a href="">
+                        <img src="..//../../../assets/article/product-1.jpg" alt="">
+                    </a>
+                    </div> <div class="col-md-4 px-2 b-img-container">
+                        <a href="">
+                            <img src="..//../../../assets/article/product-1.jpg" alt="">
+                        </a>
+                        </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+          <div class="row mb-1">
+            <div class="col-md-6"><input type="text" value="Snakers"></div>
+            
+            <h3 class="mb-2"><input type="text" value="Leather Sneakers"></h3>
+            <div class="mb-7">
+                <span class="fs-lg fw-bold text-gray-350 text-decoration-line-through">$115.00</span>
+                <span class="ms-1 fs-5 fw-bolder text-primary">$85.00</span>
+            </div>
+            <form>
+                <div class="form-group">
+
+                  <!-- Label -->
+                  <p class="mb-5">
+                    Color: <strong id="colorCaption"><input type="text" value="Blanc"></strong>
+                  </p>
+
+                  <!-- Radio -->
+                  <div class="mb-8 ms-n1">
+                    <div class="form-check form-check-inline form-check-img">
+                      <input type="radio" class="form-check-input" id="imgRadioOne" name="imgRadio" data-toggle="form-caption" data-target="#colorCaption" value="White" style="background-image: url(..//../../../assets/article/product-1.jpg);" checked="">
+                    </div>
+                    <div class="form-check form-check-inline form-check-img">
+                      <input type="radio" class="form-check-input" id="imgRadioTwo" name="imgRadio" data-toggle="form-caption" data-target="#colorCaption" value="Black" 
+                      style="background-image: url(..//../../../assets/article/product-1.jpg);">
+                    </div>
+                  </div>
+
+                </div>
+                <div class="form-group">
+
+                
+                  <!-- Radio -->
+                  <div class="mb-2">
+                    <strong>Size:</strong> 
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioOne" value="6" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioOne">6</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioTwo" value="6.5" data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                      <label class="form-check-label" for="sizeRadioTwo">6.5</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioThree" value="7" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioThree">7</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioFour" value="7.5" data-toggle="form-caption" data-target="#sizeCaption" checked="">
+                      <label class="form-check-label" for="sizeRadioFour">7.5</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioFive" value="8" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioFive">8</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioSix" value="8.5" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioSix">8.5</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioSeven" value="9" data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                      <label class="form-check-label" for="sizeRadioSeven">9</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioEight" value="9.5" data-toggle="form-caption" data-target="#sizeCaption" disabled="">
+                      <label class="form-check-label" for="sizeRadioEight">9.5</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioNine" value="10" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioNine">10</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioTen" value="10.5" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioTen">10.5</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioEleven" value="11" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioEleven">11</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioTwelve" value="12" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioTwelve">12</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioThirteen" value="13" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioThirteen">13</label>
+                    </div>
+                    <div class="form-check form-check-inline form-check-size mb-2">
+                      <input type="radio" class="form-check-input" name="sizeRadio" id="sizeRadioFourteen" value="14" data-toggle="form-caption" data-target="#sizeCaption">
+                      <label class="form-check-label" for="sizeRadioFourteen">14</label>
+                    </div>
+                  </div>
+
+                  <!-- Size chart -->
+                  <p class="mb-8">
+                    <img src="../../../../assets/icon-ruler (1).svg" alt="..." class="img-fluid"> <a class="text-reset text-decoration-underline ms-3" data-bs-toggle="modal" href="#modalSizeChart">Size chart</a>
+                  </p>
+
+                  <div class="row gx-5 mb-7">
+                    <div class="col-12 col-lg-auto">
+
+                      <!-- Quantity -->
+                      <select class="form-select mb-2">
+                        <option value="1" selected="">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                      </select>
+
+                    </div>
+        
+                  </div>
+
+                </div>
+              </form>
+          </div>
+    </div>
+</div>
+</div>
+
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Annuller</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Enregistrer</button>
+</mat-dialog-actions>
+
+
+<!-- Copyright 2023 Google LLC. All Rights Reserved by Mady DOUCOURE.
+    Use of this source code is governed by an MIT-style license that
+    can be found in the LICENSE file at https://angular.io/license -->

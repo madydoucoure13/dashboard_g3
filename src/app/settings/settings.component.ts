@@ -16,6 +16,10 @@ export interface Fruit {
 })
 export class SettingsComponent {
   imgsrc = '../../assets/avatar.png';
+  imgsrcAbout = '../../assets/about.png';
+  imgsrcMen = '../../assets/product-11.jpg';
+imgsrcWomen = '../../assets/product-1.jpg';
+imgsrcChild = '../../assets/product-0.jpg';
 
   constructor(
     public _d: DomSanitizer

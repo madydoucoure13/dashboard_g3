@@ -1,9 +1,16 @@
-import {  AfterViewInit, Component, ViewChild } from '@angular/core';
+import {  AfterViewInit, Component, ViewChild, Input, Inject } from '@angular/core';
 import {MatPaginator} from '@angular/material/paginator';
 import {SelectionModel} from '@angular/cdk/collections';
 //}
 import {MatTableDataSource} from '@angular/material/table';
 import {MatSort} from '@angular/material/sort';
+import {MatDialog} from '@angular/material/dialog';
+import { MatDialogActions } from '@angular/material/dialog';
+
+import { Article } from './article.model';
+
+import {MAT_DIALOG_DATA} from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-products',
@@ -11,6 +18,12 @@ import {MatSort} from '@angular/material/sort';
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent {
+
+    
+//@Input () myArticle : Article;
+  constructor(public dialog: MatDialog) { 
+  }
+  id : number = 1;
   displayedColumns: string[] = ['position', 'produits', 'weight', 'symbol'];
    dataSource = [
     {position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H'},
@@ -25,7 +38,7 @@ export class ProductsComponent {
     {position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne'},
   ];
 
-  displayedColumnsProduct: string[] = ['select', 'products', 'category', 'added_date', 'price', 'quantity', 'status'];
+  displayedColumnsProduct: string[] = ['select', 'products', 'category', 'added_date', 'price', 'quantity', 'status','actions'];
   dataSourceProduct = new MatTableDataSource<PeriodicElement>(ELEMENT_DATA);
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
@@ -63,7 +76,18 @@ export class ProductsComponent {
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
   }
-
+  clickedRows = new Set<PeriodicElement>();
+  openDialog(id: any) {
+    
+    const dialogRef = this.dialog.open(DialogProduct, {
+      data: { id: id },
+    });
+    //products.
+   
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
 export interface PeriodicElement {
   name: string;
@@ -95,4 +119,22 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 20, name: 'Calcium', weight: 40.078, symbol: 'Ca'},
 ];
 
+@Component({
+  selector: 'dialog-product-dialog',
+  templateUrl: 'dialog.product.html',
+})
+export class DialogProduct {
+ // public id: number = new Pr(20);
+  constructor(@Inject(MAT_DIALOG_DATA) public data: {id: number}){
+      
+  }
+ // this.id = 20;
+}
 
+/*class Pr {
+  public id: number;
+  constructor(id :number) {
+      this.id = id;
+  }
+}
+*/

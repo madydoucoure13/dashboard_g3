@@ -438,17 +438,17 @@ export class SectionChartComponent {
           colors: colorPalette,
           series: [
             {
-              name: "Day Time",
+              name: "Visit Jour",
               data: trigoSeries(52, 20)
             },
             {
-              name: "Night Time",
+              name: "Visit Nuit",
               data: trigoSeries(52, 27)
             },
           ],
           title: {
             floating: false,
-            text: 'Customers',
+            text: 'Clients',
             align: 'left',
             style: {
               fontSize: '18px'

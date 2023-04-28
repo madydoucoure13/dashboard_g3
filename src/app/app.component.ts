@@ -1,4 +1,6 @@
 import {NgModule, Component, OnInit, ViewChild } from '@angular/core';
+import {MatDialog} from '@angular/material/dialog';
+
 
 import {
   ChartComponent,
@@ -22,11 +24,11 @@ export type ChartOptions = {
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  @ViewChild("chartObj") chart: ChartComponent | undefined;
-  public chartOptions: Partial<ChartOptions>;
-  constructor() {
+//  @ViewChild("chartObj") chart: ChartComponent | undefined;
+ // public chartOptions: Partial<ChartOptions>;
+  constructor(public dialog: MatDialog) {
    
-    this.chartOptions = {
+    /*/this.chartOptions = {
       series: [
         {
           name: "My-series",
@@ -43,7 +45,19 @@ export class AppComponent {
       xaxis: {
         categories: ["Jan", "Feb",  "Mar",  "Apr",  "Mai",  "Jun",  "Jul",  "Aug", "Sep"]
       }
-    };
+    };*/
    
   }
+  openDialog() {
+    const dialogRef = this.dialog.open(DialogContentExampleDialog);
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log(`Dialog result: ${result}`);
+    });
+  }
 }
+@Component({
+  selector: 'dialog-content-example-dialog',
+  templateUrl: 'dialog-content.html',
+})
+export class DialogContentExampleDialog {}

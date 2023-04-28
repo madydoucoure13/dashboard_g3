@@ -14,9 +14,18 @@
         </div>
       </div>
     </div>
-    <div class="card">           
+    <div class="card">  
+      <div class="card-body text-center">
+        <img style="width:160px;height:160px" [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
+        <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
+        <label classs="w-50" for="file">Prendre une image</label><br>
+        <label for="address" class=""><strong><i class="fa fa-user"></i> Nom & Prénom:</strong></label>
+                <div class="input-group mb-3">
+                  <input id="address" type="text" class="form-control" value="Lanciné Keita" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+      </div>         
         <div class="card-body d-flex">
-            <div class="col-md-8 border-left">                      
+            <div class="col-md-6">                      
                 <label for="email" class="mt-4 mb-1"><strong><i class="fa fa-at"></i> Email:</strong></label>
                 <div class="input-group mb-3">
                    <input id="email" type="text" class="form-control" value="support@ikaboutiki.com" aria-label="Username" aria-describedby="basic-addon1">
@@ -34,13 +43,18 @@
 
             </div>
 
-            <div class="col-md-4 text-center ms-2">
-              <img style="width:160px;height:160px" [src]="_d.bypassSecurityTrustUrl(imgsrc)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
-              <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
-              <label for="file">Prendre une image</label>
-              <label for="address" class="mt-3 mb-1"><strong><i class="fa fa-user"></i> Nom & Prénom:</strong></label>
+            <div class="col-md-6  ms-2">
+               <label for="address" class="mt-4 mb-1"><strong>Ancien Mot de passe:</strong></label>
                 <div class="input-group mb-3">
-                  <input id="address" type="text" class="form-control" value="Lanciné Keita" aria-label="Username" aria-describedby="basic-addon1">
+                  <input id="address" type="password" class="form-control" value="Lanciné Keita" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+               <label for="address" class="mt-3 mb-1"><strong>Nouveau Mot de passe:</strong></label>
+                <div class="input-group mb-3">
+                  <input id="address" type="password" class="form-control" value="Lanciné Keita" aria-label="Username" aria-describedby="basic-addon1">
+               </div>
+               <label for="address" class="mt-3 mb-1"><strong>onfirmez le nouveau de passe</strong></label>
+                <div class="input-group mb-3">
+                  <input id="address" type="password" class="form-control" value="Lanciné Keita" aria-label="Username" aria-describedby="basic-addon1">
                </div>
           </div> 
            
@@ -112,7 +126,37 @@
         </div>
       </div> <!-- end card-body -->
 
-      
+      <div class="card-body d-flex pt-0">
+        <!--label for=""><strong>Images catégories</strong></label-->
+        <div class="col">                      
+          <img style="width:100%; border-radius: 0px !important;" [src]="_d.bypassSecurityTrustUrl(imgsrcMen)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
+          <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
+          <label for="file">Prendre une image</label>  
+        </div>
+        <div class="col ms-1">                      
+          <img style="width:100%; border-radius: 0px !important;" [src]="_d.bypassSecurityTrustUrl(imgsrcWomen)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
+          <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
+          <label for="file">Prendre une image</label>  
+      </div>
+      <div class="col ms-1">                      
+        <img style="width:100%; border-radius: 0px !important;" [src]="_d.bypassSecurityTrustUrl(imgsrcChild)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
+        <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
+        <label for="file">Prendre une image</label>  
+    </div>
+    </div> <!-- end card-body -->
+
+<!--A propos-->
+      <div class="card-body pt-0">
+        <label for=""><strong>A propos</strong></label>
+        <img style="width:100%; border-radius: 0px !important;" [src]="_d.bypassSecurityTrustUrl(imgsrcAbout)" alt="shreyu" class="img-thumbnail avatar-lg rounded-circle">
+        <input id="file"  class="inputfile" type="file"(change)="fileChange($event)">
+        <label for="file">Prendre une image</label>               
+        <div class="form-group">
+          <label for="exampleFormControlTextarea2"><strong>A propos</strong></label>
+          <textarea class="form-control" id="exampleFormControlTextarea2" rows="8"></textarea>
+        </div>       
+       
+    </div> <!-- end card-body -->
       <div class="card-body pt-0">
                             
         <div class="form-group">
